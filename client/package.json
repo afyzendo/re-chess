@@ -4,7 +4,7 @@
   "author": "Arjan van IJzendoorn",
   "private": true,
   "scripts": {
-    "build": "tsc"
+    "build": "browserify index.tsx -p [ tsify ] >../server/public/js/bundle.js"
   },
   "dependencies": {
     "react": "^15.5.4",
@@ -13,6 +13,8 @@
   "devDependencies": {
     "@types/react": "^15.0.24",
     "@types/react-dom": "^15.5.0",
-    "typescript": "^2.3.3"
+    "typescript": "^2.3.3",
+    "tsify": "^3.0.1",
+    "browserify": "^14.3.0"
   }
 }
